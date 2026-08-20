@@ -55,7 +55,7 @@ gathered here for the day.
 
 Have a beautiful year.`,
     close: "For Yinka.",
-    replay: "REPLAY EXPERIENCE",
+    credit: "from olamide",
   },
 
   photos: [

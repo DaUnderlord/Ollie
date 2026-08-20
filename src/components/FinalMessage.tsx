@@ -1,20 +1,10 @@
 import { birthdayData } from "../data/birthday";
-import { useLenis } from "../lib/lenis-context";
 
 export function FinalMessage() {
-  const lenis = useLenis();
   const paragraphs = birthdayData.letter.body
     .trim()
     .split(/\n\s*\n/)
     .map((p) => p.trim());
-
-  const replay = () => {
-    if (lenis) {
-      lenis.scrollTo("#opening", { duration: 2.1, easing: (t: number) => 1 - Math.pow(1 - t, 3) });
-      return;
-    }
-    document.getElementById("opening")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <section
@@ -47,13 +37,7 @@ export function FinalMessage() {
           {birthdayData.letter.close}
         </p>
         <div className="mx-auto mt-10 h-px w-16 bg-silver/50" aria-hidden="true" />
-        <button
-          type="button"
-          onClick={replay}
-          className="meta mt-12 text-silver-dim transition-colors duration-300 hover:text-silver-bright"
-        >
-          {birthdayData.letter.replay}
-        </button>
+        <p className="meta mt-12 text-silver-dim">{birthdayData.letter.credit}</p>
       </div>
     </section>
   );

@@ -181,7 +181,7 @@ export function OpeningHero() {
       className="relative h-[180vh] sm:h-[220vh] lg:h-[240vh]"
       aria-label="Opening"
     >
-      <div ref={stageRef} className="sticky top-0 h-svh overflow-hidden bg-charcoal-deep">
+      <div ref={stageRef} className="sticky top-0 h-svh bg-charcoal-deep">
         <div ref={imageWrapRef} className="absolute inset-0 overflow-hidden lg:inset-auto">
           <div ref={imageInnerRef} className="h-full w-full will-change-transform">
             <PhotoPicture
@@ -243,10 +243,10 @@ export function OpeningHero() {
           <p data-cover className="meta text-charcoal/55">
             01
           </p>
-          <div className="absolute top-[max(4.5rem,calc(env(safe-area-inset-top)+3.5rem))] right-4 max-w-[14ch] text-right sm:right-8 lg:bottom-auto lg:right-16 lg:top-1/2 lg:max-w-[18ch] lg:-translate-y-1/2">
+          <div className="absolute top-[max(4.5rem,calc(env(safe-area-inset-top)+3.5rem))] right-4 max-w-[14ch] text-right sm:right-8 lg:left-[50%] lg:right-8 lg:top-1/2 lg:max-w-[20rem] lg:-translate-y-1/2 lg:text-left xl:left-[52%]">
             <p
               data-cover
-              className="display text-[clamp(2.5rem,11vw,8.5rem)] text-charcoal"
+              className="display text-[clamp(2.5rem,11vw,8.5rem)] text-charcoal lg:text-[clamp(3rem,5vw,5.75rem)]"
             >
               {birthdayData.name}
             </p>
