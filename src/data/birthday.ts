@@ -33,7 +33,7 @@ export const birthdayData = {
   chapters: {
     still: {
       label: "STILL",
-      lines: ["A still", "moment."],
+      lines: ["Quiet,", "for a moment."],
     },
     joy: {
       label: "THIS JOY",
@@ -41,17 +41,17 @@ export const birthdayData = {
     },
     then: {
       label: "AND THEN",
-      line: "there is her.",
+      line: "There she is.",
     },
     her: {
       label: "HER",
-      caption: "Exactly as she is.",
+      caption: "Poised.",
     },
   },
 
   letter: {
-    body: `A handful of photographs from the shoot.
-Set down in one place, for the day.
+    body: `A handful of photographs from the shoot,
+gathered here for the day.
 
 Have a beautiful year.`,
     close: "For Yinka.",
@@ -76,7 +76,7 @@ Have a beautiful year.`,
       layout: "split",
       chapter: "STILL",
       title: "Yinka",
-      caption: "A still moment.",
+      caption: "Quiet, for a moment.",
       objectPosition: "center 12%",
       alt: "Yinka seated on a wooden chair in a royal and sky-blue ensemble, gazing upward and away from the camera.",
       sizes: "(min-width: 1024px) 55vw, 100vw",
@@ -98,7 +98,7 @@ Have a beautiful year.`,
       layout: "bleed",
       chapter: "AND THEN",
       title: "Yinka",
-      caption: "there is her.",
+      caption: "There she is.",
       objectPosition: "center 10%",
       alt: "Yinka standing in an electric blue tailored suit against a warm amber backdrop, hands clasped, looking at the camera.",
       sizes: "100vw",
@@ -109,7 +109,7 @@ Have a beautiful year.`,
       layout: "icon",
       chapter: "HER",
       title: "Yinka",
-      caption: "Exactly as she is.",
+      caption: "Poised.",
       objectPosition: "center 8%",
       alt: "Yinka standing in an electric blue suit against an amber studio backdrop, hands behind her back, looking directly at the camera.",
       sizes: "(min-width: 1024px) 58vw, 92vw",
