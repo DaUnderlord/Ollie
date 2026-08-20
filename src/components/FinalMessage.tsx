@@ -33,11 +33,15 @@ export function FinalMessage() {
             </p>
           ))}
         </div>
-        <p className="display mt-20 text-[clamp(1.5rem,3vw,2rem)] italic text-silver-bright">
-          {birthdayData.letter.close}
-        </p>
-        <div className="mx-auto mt-10 h-px w-16 bg-silver/50" aria-hidden="true" />
-        <p className="meta mt-12 text-silver-dim">{birthdayData.letter.credit}</p>
+        <div className="mt-20">
+          <p className="display text-[clamp(1.5rem,3vw,2rem)] italic text-silver-bright">
+            {birthdayData.letter.close}
+          </p>
+          <div className="mx-auto mt-10 h-px w-16 bg-silver/50" aria-hidden="true" />
+          <p className="display mt-10 text-[clamp(1.35rem,2.8vw,1.875rem)] italic text-silver/90">
+            {birthdayData.letter.credit}
+          </p>
+        </div>
       </div>
     </section>
   );
